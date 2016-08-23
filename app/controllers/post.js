@@ -7,6 +7,10 @@ export default Ember.Controller.extend({
     },
     toggleBody: function() {
       this.toggleProperty('isShowingBody');
+    },
+    submitAction: function() {
+      alert(this.get('name'));
+      alert(this.get('comment'));
     }
   },
   title: 'My Blog Post',

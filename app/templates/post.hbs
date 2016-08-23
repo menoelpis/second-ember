@@ -18,3 +18,15 @@
     <li><strong>{{commentlist.name}}</strong>- {{commentlist.comment}}</li>
   {{/each}}
 </ul>
+
+<hr>
+<h4>Add Comment</h4>
+<form {{action 'submitAction' on='submit'}}>
+    <p>
+        Name: {{input value=name}}
+    </p>
+    <p>
+        Comment: {{textarea value=comment}}
+    </p>
+    <button type="submit">Submit</button>
+</form>
