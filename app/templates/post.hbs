@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<p>{{body}}</p>
+<p>
+    <strong>Authors:</strong>
+    {{#each authors as |author|}}
+        {{author}},
+    {{/each}}
+</p>
+<h4>Comments</h4>
+<ul>
+  {{#each comments as |commentlist|}}
+    <li><strong>{{commentlist.name}}</strong>- {{commentlist.comment}}</li>
+  {{/each}}
+</ul>
