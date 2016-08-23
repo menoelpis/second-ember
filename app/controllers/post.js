@@ -16,6 +16,7 @@ export default Ember.Controller.extend({
   title: 'My Blog Post',
   body: 'This is the body of my blog post',
   authors: ['William', 'Robert', 'Jason', 'Eunice'],
+  created: new Date(),
   comments: [
     {
       name: 'Mike Smith',
