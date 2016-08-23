@@ -4,6 +4,9 @@ export default Ember.Controller.extend({
   actions: {
     sayHello: function() {
       alert('Hello');
+    },
+    toggleBody: function() {
+      this.toggleProperty('isShowingBody');
     }
   },
   title: 'My Blog Post',
